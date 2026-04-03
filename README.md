@@ -8,13 +8,13 @@ An interactive web application that visualizes how classic AI search algorithms 
 
 ## 🚀 Live Demo
 
-👉 [View the app](PEGÁ_ACÁ_TU_LINK_DE_GITHUB_PAGES)
+👉 [View the app](https://devcodemate.github.io/maze-solver-visualizer/)
 
 ---
 
 ## 💻 Repository
 
-👉 [View source code](PEGÁ_ACÁ_TU_REPO)
+👉 [View source code](https://github.com/devcodemate/maze-solver-visualizer)
 
 ---
 
