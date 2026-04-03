@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maze Solver Visualizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Maze Solver Visualizer</h1>
+      <p class="subtitle">
+        A simple front-end project inspired by AI search algorithms.
+      </p>
+    </header>
+
+    <section class="controls card">
+      <div class="control-group">
+        <label for="algorithm">Choose algorithm</label>
+        <select id="algorithm">
+          <option value="bfs">Breadth-First Search (BFS)</option>
+          <option value="dfs">Depth-First Search (DFS)</option>
+        </select>
+      </div>
+
+      <div class="button-group">
+        <button id="solveBtn">Solve Maze</button>
+        <button id="resetBtn" class="secondary">Reset</button>
+      </div>
+    </section>
+
+    <section class="info card">
+      <h2>How to use</h2>
+      <ul>
+        <li>Click cells to add or remove obstacles.</li>
+        <li>The green cell is the start point.</li>
+        <li>The red cell is the goal point.</li>
+        <li>Select BFS or DFS and click "Solve Maze".</li>
+      </ul>
+    </section>
+
+    <section class="board card">
+      <h2>Maze Grid</h2>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <section class="legend card">
+      <h2>Legend</h2>
+      <div class="legend-items">
+        <div class="legend-item">
+          <span class="box start"></span>
+          <span>Start</span>
+        </div>
+        <div class="legend-item">
+          <span class="box goal"></span>
+          <span>Goal</span>
+        </div>
+        <div class="legend-item">
+          <span class="box wall"></span>
+          <span>Obstacle</span>
+        </div>
+        <div class="legend-item">
+          <span class="box path"></span>
+          <span>Path</span>
+        </div>
+        <div class="legend-item">
+          <span class="box visited"></span>
+          <span>Visited</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="result card">
+      <h2>Result</h2>
+      <p id="statusText">Build your maze and choose an algorithm.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

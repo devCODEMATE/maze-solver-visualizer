@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  min-width: 260px;
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.secondary {
+  background: #6b7280;
+}
+
+h2 {
+  margin-bottom: 14px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 45px);
+  gap: 6px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.cell {
+  width: 45px;
+  height: 45px;
+  background: #e5e7eb;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cell:hover {
+  transform: scale(1.03);
+}
+
+.cell.start {
+  background: #22c55e;
+}
+
+.cell.goal {
+  background: #ef4444;
+}
+
+.cell.wall {
+  background: #111827;
+}
+
+.cell.path {
+  background: #facc15;
+}
+
+.cell.visited {
+  background: #60a5fa;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.box {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  display: inline-block;
+  border: 1px solid #cbd5e1;
+}
+
+.box.start {
+  background: #22c55e;
+}
+
+.box.goal {
+  background: #ef4444;
+}
+
+.box.wall {
+  background: #111827;
+}
+
+.box.path {
+  background: #facc15;
+}
+
+.box.visited {
+  background: #60a5fa;
+}
+
+.result p {
+  font-size: 1rem;
+  color: #374151;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(10, 30px);
+    gap: 4px;
+  }
+
+  .cell {
+    width: 30px;
+    height: 30px;
+  }
+}
